@@ -4,7 +4,7 @@
 require_once 'sistema/configuracao.php';
 include_once 'Helpers.php';
 
-$texto = 'texto para resumir';
+// $texto = '<h1>texto</h1> <p>para</p> resumir';
 
 //Funções de string
 /*echo $total = mb_strlen(trim($texto));
@@ -19,8 +19,27 @@ echo $ocorrencia = mb_strrpos($texto, 'x');
 //echo '<hr>';
 //echo saudacao();
 
-echo '<hr>';
-echo resumirTexto($texto, 10);
+// echo '<hr>';
+// echo resumirTexto($texto, 50);
+
+// $valor = 1;
+// if ($valor) {
+//     echo $valor;
+// }else {
+//     echo 0;
+// }
+
+//Operador ternário
+// echo ($valor ? $valor : 0);
+// echo ($valor ?: 0);
+
+// echo 'R$'.formatarValor();
+// echo formatarNumero(1000000000);
+
+// $data = date('d/m/Y H:i:s');
+// echo $data;
+
+echo contarTempo('2020-01-31 14:33:15')
 
 ?>
 
