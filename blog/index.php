@@ -1,45 +1,23 @@
 <?php
-//Arquivo responsável pela inicialização do sistema
-//declare(strict_types = 1);
 require_once 'sistema/configuracao.php';
 include_once 'Helpers.php';
 
-// $texto = '<h1>texto</h1> <p>para</p> resumir';
 
-//Funções de string
-/*echo $total = mb_strlen(trim($texto));
-echo '<hr>';
+// $meses = [2 => 'Janeiro', 1 =>'Fevereiro', 'Março'];
 
-echo $resumo = mb_substr($texto, 2, 15);
-echo '<hr>';
-
-echo $ocorrencia = mb_strrpos($texto, 'x');
-*/
-//var_dump($texto);
-//echo '<hr>';
-//echo saudacao();
-
-// echo '<hr>';
-// echo resumirTexto($texto, 50);
-
-// $valor = 1;
-// if ($valor) {
-//     echo $valor;
-// }else {
-//     echo 0;
+// foreach ($meses as $key => $value) {
+//     echo $value.'<br>';
 // }
+// var_dump($meses);
 
-//Operador ternário
-// echo ($valor ? $valor : 0);
-// echo ($valor ?: 0);
+// echo dataAtual();
 
-// echo 'R$'.formatarValor();
-// echo formatarNumero(1000000000);
+// echo slug("Adão\"Negro\" - 2022").'<hr>';
+// echo slug("Avatar 2: O caminho da Água").'<hr>';
+// echo slug("Não! Não Olhe!").'<hr>';
+// echo slug("Sonic 2 - O Filme").'<hr>';
+// echo slug("NOVA SÉRIE NO DISNEY+!").'<hr>';
+// echo slug("100 Melhores filmes").'<hr>';
+// echo slug("teste!@####$6%%``").'<hr>';
 
-// $data = date('d/m/Y H:i:s');
-// echo $data;
-
-echo contarTempo('2020-01-31 14:33:15')
-
-?>
-
+echo saudacao();
