@@ -2,11 +2,16 @@
 
 <?php
 
-use sistema\Nucleo\Mensagem;
-use sistema\Nucleo\Helpers;
+require 'vendor/autoload.php';
 
-require_once 'sistema/configuracao.php';
-include_once 'sistema/Nucleo/Helpers.php';
-include './sistema/Nucleo/Mensagem.php'; 
+// use sistema\Nucleo\Helpers;
+
+// $controlador = new Controlador('teste');
+// echo '<hr>';
+// var_dump($controlador);
+
+// echo Helpers::saudacao();
+// echo '<hr>';
+// echo SITE_NOME;
 
 

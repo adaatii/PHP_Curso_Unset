@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-4": {
+            "sistema\\": "sistema/"
+        },
+        "files": [
+            "sistema/configuracao.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "adaatii"            
+        }
+    ],
+    "minimum-stability": "dev"
+}
