@@ -14,15 +14,30 @@ class SiteControlador extends Controlador{
     
     public function index():void{
         echo $this->template->renderizar('index.html', [
-            'titulo' => 'teste de titulo',
-            'subtitulo' => 'teste de subtitulo'
+            'titulo' => '',
+            
         ]);
     }
 
     public function sobre():void{
-        echo $this->template->renderizar('index.html', [
+        echo $this->template->renderizar('sobre.html', [
+            'titulo' => 'teste de Sobre',
+            
+        ]);
+    }
+
+    public function teste():void{
+        echo $this->template->renderizar('teste.html', [
             'titulo' => 'teste de Sobre',
             'subtitulo' => 'teste de Sobre'
         ]);
     }
+
+    public function erro404():void{
+        echo $this->template->renderizar('404.html', [
+            'titulo' => 'Página não encontrada'                      
+        ]);
+    }
+
+   
 }

@@ -1,11 +1,10 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <?php
 
 require 'vendor/autoload.php';
-require 'rotas.php';
+//require 'rotas.php';
+use sistema\Nucleo\Conexao;
+//use sistema\Nucleo\Helpers;
 
-// use sistema\Nucleo\Helpers;
 
 // $controlador = new Controlador('teste');
 // echo '<hr>';
@@ -15,4 +14,10 @@ require 'rotas.php';
 // echo '<hr>';
 // echo SITE_NOME;
 
+// try {
+//    Helpers::validarCpf('12312312312');
+// } catch (\Exception $e) {
+//     echo $e->getMessage();
+// }
 
+$con = Conexao::getInstancia();
