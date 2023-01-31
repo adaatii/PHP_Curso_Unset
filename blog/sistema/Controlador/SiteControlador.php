@@ -5,7 +5,6 @@ namespace sistema\Controlador;
 use sistema\Nucleo\Controlador;
 use sistema\Modelo\PostModelo;
 use sistema\Nucleo\Helpers;
-use sistema\Modelo\CategoriaModelo;
 
 class SiteControlador extends Controlador{
     
@@ -18,8 +17,7 @@ class SiteControlador extends Controlador{
     public function index():void{
         $posts = (new PostModelo())-> busca();
         echo $this->template->renderizar('index.html', [           
-            'posts' => $posts,
-            'categorias' => $this->categorias()           
+            'posts' => $posts            
         ]);
     }
 
@@ -29,8 +27,8 @@ class SiteControlador extends Controlador{
            Helpers::redirecionar('404');
         }else {
             echo $this->template->renderizar('post.html', [
-                'post' => $post, 
-                'categorias' => $this->categorias()                 
+                'post' => $post
+                
             ]);
         }        
     }
@@ -53,10 +51,6 @@ class SiteControlador extends Controlador{
         echo $this->template->renderizar('404.html', [
             'titulo' => 'Página não encontrada'                      
         ]);
-    }
-
-    public function categorias(){
-        return (new CategoriaModelo())->busca();
     }
 
    

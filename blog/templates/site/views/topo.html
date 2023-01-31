@@ -1,23 +1,12 @@
 <header class="p-3 text-bg-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="{{url()}}" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <img src="{{'templates/site/assets/img/phpSmall.png'}}" alt="php 8"  height="30" width="30">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="{{url()}}" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><li class="nav-item dropdown">
-            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Categorias
-            </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              {% for categoria in categorias%}
-              <li><a class="dropdown-item" href="#">{{categoria.titulo}}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-  </li>          
           <li><a href="{{url('sobre')}}" class="nav-link px-2 text-white">Sobre</a></li>
           <li><a href="{{url('teste')}}" class="nav-link px-2 text-white">Teste</a></li>          
         </ul>
