@@ -23,9 +23,8 @@ class Conexao
             } catch (PDOException $th) {
                 die('Erro de conexão:: ' . $th->getMessage());
             }
-           
+            return self::$instancia;
         }
-        return self::$instancia;
     }
 
     protected function __construct()
