@@ -12,7 +12,7 @@ class Conexao
     {
         if (empty(self::$instancia)) {
             try {
-                self::$instancia = new PDO('mysql:host='.DB_HOST.';port='.DB_PORTA.';dbname='.DB_NOME, DB_USUARIO, DB_SENHA, [
+                self::$instancia = new PDO('mysql:host=' . DB_HOST . ';port=' . DB_PORTA . ';dbname=' . DB_NOME, DB_USUARIO, DB_SENHA, [
                     //todo erro através da PDO será uma exceção
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     //converter qualquer resultado como um objeto anônimo
@@ -23,18 +23,15 @@ class Conexao
             } catch (PDOException $th) {
                 die('Erro de conexão:: ' . $th->getMessage());
             }
-           
         }
         return self::$instancia;
     }
 
     protected function __construct()
     {
-        
     }
 
     private function __clone(): void
     {
-        
     }
 }
