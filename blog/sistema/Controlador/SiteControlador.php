@@ -7,6 +7,7 @@ use sistema\Modelo\PostModelo;
 use sistema\Nucleo\Helpers;
 use sistema\Modelo\CategoriaModelo;
 
+
 class SiteControlador extends Controlador{
     
     public function __construct()

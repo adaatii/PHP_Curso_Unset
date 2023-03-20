@@ -21,7 +21,12 @@ class Template
         $this->twig->setLexer($lexer);
     }
 
-    public function renderizar(string $view, array $dados)
+    /**
+     * @param string $view - template a ser renderizado
+     * @param array $dados - dados que será recebido na view
+     * @return render do twig template
+     */
+    public function renderizar(string $view, array $dados): string
     {
         return $this->twig->render($view, $dados);
     }

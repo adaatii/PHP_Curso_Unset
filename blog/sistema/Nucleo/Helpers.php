@@ -9,26 +9,6 @@ public static function saudacao(): string
 {
     $hora = date('H');
 
-    // if($hora >= 5 && $hora <= 12){
-    //     $saudacao = 'Bom dia';
-    // }else if($hora > 12 && $hora <= 18){
-    //     $saudacao = 'Boa tarde';
-    // }else{
-    //     $saudacao = 'Boa noite';
-    // }
-
-    // switch ($hora) {
-    //     case $hora >= 5 && $hora <= 12:
-    //         $saudacao = 'Bom dia';
-    //         break;
-    //     case $hora > 12 && $hora <= 18:
-    //         $saudacao = 'Boa tarde';
-    //         break;
-    //     default:
-    //         $saudacao = 'Boa noite';
-    //         break;
-    // }
-
     $saudacao = match (true) {
         $hora >= '05' && $hora < '12' => 'Bom dia',
         $hora >= '12' && $hora <= '18' => 'Boa tarde',
